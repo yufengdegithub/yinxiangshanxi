@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="./js/auto.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <div data-role="header" class="header">
+        <h1>印 象 陕 西</h1>
+        <div data-role="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html"  data-transition="slide" data-direction="reverse" data-icon="star" >美食</a></li>
+                <li><a href="renwen.html"  data-transition="slide" data-direction="reverse" data-icon="grid" >人文</a></li>
+                <li><a href="#"  class="ui-btn-active" data-icon="home" >特产</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content" class="content">
+        <ul data-role="listview" data-inset="true" class="listview">
+            <li>
+                <a href="#">
+                    <img src="./img/hongzao.jpg">
+                    <h2>陕北红枣</h2>
+                    <p>陕北大红枣是驰名中外的陕西传统名优特产之一。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/pingguo.jpg">
+                    <h2>白水苹果</h2>
+                    <p>众所周知，白水县是国内外专家公认的苹果最佳优生区之一，素有“中国苹果之乡”的美誉，其“白水”苹果也被确定为陕西省知名品牌。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/xifengjiu.jpg">
+                    <h2>凤翔西凤酒</h2>
+                    <p>西凤酒是我国“八大名酒”之一，，唯以凤翔城西柳镇所生产的酒为最佳，声誉最高。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/shuijingbing.jpg">
+                    <h2>水晶饼</h2>
+                    <p>水晶饼因其馅芯透明发亮，犹如水晶而得名。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/shiliu.jpg">
+                    <h2>临潼石榴</h2>
+                    <p>临潼石榴具有悠久的历史，引进初期，先在京都长安(今西安)御花园的“上林苑”和骊山的温泉宫(今华清池)内种植，是供皇子后妃观赏的。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/lurou.jpg">
+                    <h2>凤翔腊驴肉</h2>
+                    <p>驴肉具有补气血，益脏腑等功能，对于积年劳损、久病初愈、气血亏虚、短气乏力、食欲不振者皆为补益食疗佳品。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/guamian.jpg">
+                    <h2>歧山挂面</h2>
+                    <p>选用优质小麦特粉，经过揉条，搓条，上棍等十道工序精制而成。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/heimi.jpg">
+                    <h2>洋县黑米</h2>
+                    <p>洋县种植黑稻米，距今已有2000多年历史。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+
+
+
+
+
+        </ul>
+    </div>
+
+    <div data-role="footer" class="footer">
+        <h1>特产</h1>
+    </div>
+</div>
+<script>
+    $("html").on("swiperight",function(){
+        $(".ui-btn-remwen").click();
+    });
+</script>
+</body>
+</html>

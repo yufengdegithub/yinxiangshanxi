@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="./js/auto.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <div data-role="header" class="header">
+        <h1>印 象 陕 西</h1>
+        <div data-role="navbar" class="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active"  data-icon="star" >美食</a></li>
+                <li><a href="renwen.html" class="ui-btn-renwen" data-transition="slide" data-icon="grid" >人文</a></li>
+                <li><a href="techan.html"  data-transition="slide" data-icon="home" >特产</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content" class="content">
+        <ul data-role="listview" data-inset="true" class="listview">
+            <li>
+                <a href="#">
+                    <img src="./img/paomo.jpg">
+                    <h2>羊肉泡馍</h2>
+                    <p>羊肉泡馍烹制精细，料重味醇，肉烂汤浓，肥而不腻，食后回味无穷。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/roujiamo.jpg">
+                    <h2>肉夹馍</h2>
+                    <p>肉夹馍陕西省汉族特色美食。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/hulatang.jpg">
+                    <h2>肉丸胡辣汤</h2>
+                    <p>肉丸胡辣汤源自西安，区别于外地的是汤要勾芡。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/liangpi.jpg">
+                    <h2>凉皮</h2>
+                    <p>皮为陕西特色小吃之一，又称陕西凉皮。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/saozimian.jpg">
+                    <h2>臊子面</h2>
+                    <p>臊子面是中国陕西汉族传统面食，以宝鸡的岐山臊子面最为正宗，臊子面历史悠久。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/youpomian.jpg">
+                    <h2>油泼面</h2>
+                    <p>油泼面，汉族传统风味面食，陕西很有特色的一种主食。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/biangbiangmian.jpg">
+                    <h2>biangbiang面</h2>
+                    <p>Biang biang面是陕西名特小吃，也称裤带面。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/guokui.jpg">
+                    <h2>锅盔</h2>
+                    <p>陕西锅盔，又叫锅魁、锅盔馍、干馍，是陕西省关中地区城乡居民喜食的汉族传统风味面食小吃。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/heluo.jpg">
+                    <h2>荞面饸饹</h2>
+                    <p>荞面饸饹是陕西省著名的汉族面食小吃。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/choujiu.jpg">
+                    <h2>黄桂稠酒</h2>
+                    <p>西安黄桂稠酒始于商周，距今已有三千多年的历史。</p>
+                </a>
+                <a href="#" class="icon"></a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div data-role="footer" class="footer">
+        <h1>美食</h1>
+    </div>
+</div>
+<script>
+    $("html").on("swipeleft",function(){
+        $(".ui-btn-renwen").click();
+    });
+</script>
+</body>
+</html>

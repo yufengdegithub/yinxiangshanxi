@@ -1,0 +1,30 @@
+
+.header{height:1.6rem}
+.header h1{height:0.4rem;font-size:0.3rem!important;}
+.header .navbar{height:1.0rem}
+.header .navbar ul li a{height:100%;}
+.header .navbar ul li a span{font-size:0.3rem;}
+
+
+.content .listview {
+    margin:0.2rem 0!important;
+}
+.content .listview li {
+     height:1.6rem;
+ }
+.content .listview li a{
+    margin-left:1.0rem;
+}
+.content .listview li img{
+    max-width:1.6rem;max-height:1.2rem;min-height:1.2rem;margin:0.2rem;border-radius:0.1rem;
+}
+.content .listview li a h2{
+    margin:0 0 0.36rem;
+    font-size:0.4rem;
+}
+.content .listview li a p{
+    font-size:0.24rem;
+}
+
+.footer{height:0.8rem}
+.footer .ui-title{height:0.8rem;font-size:0.3rem;}
