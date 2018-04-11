@@ -16,8 +16,8 @@
         <div data-role="navbar" class="navbar">
             <ul>
                 <li><a href="index.html"  data-transition="slide" data-direction="reverse" data-icon="star" >美食</a></li>
-                <li><a href="renwen.html"  data-transition="slide" data-direction="reverse" data-icon="grid" >人文</a></li>
-                <li><a href="#"  class="ui-btn-active" data-icon="home" >特产</a></li>
+                <li><a href="renwen.html" id="ui-btn-remwen" data-transition="slide" data-direction="reverse" data-icon="grid" >人文</a></li>
+                <li><a href="techan.html"  class="active" data-icon="home" >特产</a></li>
             </ul>
         </div>
     </div>
@@ -101,9 +101,12 @@
     </div>
 </div>
 <script>
-    $("html").on("swiperight",function(){
-        $(".ui-btn-remwen").click();
-    });
+    $(function(){
+        $("html").on("swiperight",function(){
+            window.location.href='renwen.html';
+        });
+    })
+
 </script>
 </body>
 </html>

@@ -1,13 +1,17 @@
 
-.header{height:1.6rem}
-.header h1{height:0.4rem;font-size:0.3rem!important;}
+.header{position:fixed;width:100%;top:0;height:1.6rem;z-index:9999;}
+.header-info{position:fixed;width:100%;top:0;height:0.8rem;z-index:9999;}
+.header-info a span{font-size:0.3rem;}
+.ui-header>.ui-btn{margin-top:0.05rem;}
+.header h1{width:100%;height:0.4rem;font-size:0.3rem!important;text-align:center}
+.ui-header .ui-title, .ui-footer .ui-title {margin:0.2rem 0 0.2rem;}
 .header .navbar{height:1.0rem}
 .header .navbar ul li a{height:100%;}
 .header .navbar ul li a span{font-size:0.3rem;}
-
+.active{background:#5393c5}
 
 .content .listview {
-    margin:0.2rem 0!important;
+    margin:0.8rem 0 1.0rem!important;
 }
 .content .listview li {
      height:1.6rem;
@@ -26,5 +30,9 @@
     font-size:0.24rem;
 }
 
-.footer{height:0.8rem}
-.footer .ui-title{height:0.8rem;font-size:0.3rem;}
+.content{ margin:1.0rem 0!important;}
+.content>img{width:100%;border-radius:0.2rem;}
+.content>p{padding:0.2rem; text-indent:0.6rem;font-size:0.4rem;line-height:0.6rem;}
+
+.footer{position:fixed;width:100%;bottom:0;height:0.8rem;z-index:9999;}
+.footer .ui-title{width:100%;height:0.8rem;font-size:0.3rem;text-align:center}

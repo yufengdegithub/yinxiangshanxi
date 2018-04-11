@@ -15,9 +15,9 @@
         <h1>印 象 陕 西</h1>
         <div data-role="navbar" class="navbar">
             <ul>
-                <li><a href="index.html"  class="ui-btn-meishi" data-transition="slide" data-direction="reverse" data-icon="star" >美食</a></li>
-                <li><a href="#" class="ui-btn-active" data-icon="grid" >人文</a></li>
-                <li><a href="techan.html" class="ui-btn-techan" data-transition="slide" data-icon="home" >特产</a></li>
+                <li><a href="index.html"  id="ui-btn-meishi" data-transition="slide" data-direction="reverse" data-icon="star" >美食</a></li>
+                <li><a href="renwen.html" class="active" data-icon="grid" >人文</a></li>
+                <li><a href="techan.html" id="ui-btn-techan" data-transition="slide" data-icon="home" >特产</a></li>
             </ul>
         </div>
     </div>
@@ -113,12 +113,18 @@
     </div>
 </div>
 <script>
-    $("html").on("swipeleft",function(){
-        $(".ui-btn-techan").click();
-    });
-    $("html").on("swiperight",function(){
-        $(".ui-btn-meishi").click();
-    });
+    $(function(){
+        $("html").on({
+            swipeleft:function(){
+                window.location.href='techan.html';
+            },
+            swiperight:function(){
+                window.location.href='index.html';
+            }
+        });
+
+    })
+
 </script>
 </body>
 </html>
