@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/auto.js"></script>
 </head>
 <body>
@@ -15,9 +13,9 @@
         <h1>印 象 陕 西</h1>
         <div data-role="navbar" class="navbar">
             <ul>
-                <li><a href="index.html"  data-transition="slide" data-direction="reverse" data-icon="star" >美食</a></li>
-                <li><a href="renwen.html" id="ui-btn-remwen" data-transition="slide" data-direction="reverse" data-icon="grid" >人文</a></li>
-                <li><a href="techan.html"  class="active" data-icon="home" >特产</a></li>
+                <li ><a href="index.html" ><img src="./img/meishi-1.png">美食</a></li>
+                <li ><a href="renwen.html"  ><img src="./img/renwen-2.png">人文</a></li>
+                <li class="active"   ><a href="techan.html"  ><img src="./img/techan-3.png">特产</a></li>
             </ul>
         </div>
     </div>
@@ -25,74 +23,155 @@
     <div data-role="content" class="content">
         <ul data-role="listview" data-inset="true" class="listview">
             <li>
-                <a href="#">
+                <a href="./template/techan/hongzao.html">
                     <img src="./img/hongzao.jpg">
-                    <h2>陕北红枣</h2>
-                    <p>陕北大红枣是驰名中外的陕西传统名优特产之一。</p>
+                    <div>
+                        <h2>陕北红枣</h2>
+                        <p>陕北大红枣是驰名中外的陕西传统名优特产之一。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
+                <a href="./template/techan/pingguo.html">
                     <img src="./img/pingguo.jpg">
-                    <h2>白水苹果</h2>
-                    <p>众所周知，白水县是国内外专家公认的苹果最佳优生区之一，素有“中国苹果之乡”的美誉，其“白水”苹果也被确定为陕西省知名品牌。</p>
+                    <div>
+                        <h2>白水苹果</h2>
+                        <p>众所周知，白水县是国内外专家公认的苹果最佳优生区之一，素有“中国苹果之乡”的美誉，其“白水”苹果也被确定为陕西省知名品牌。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
+                <a href="./template/techan/xifengjiu.html">
                     <img src="./img/xifengjiu.jpg">
-                    <h2>凤翔西凤酒</h2>
-                    <p>西凤酒是我国“八大名酒”之一，，唯以凤翔城西柳镇所生产的酒为最佳，声誉最高。</p>
+                    <div>
+                        <h2>凤翔西凤酒</h2>
+                        <p>西凤酒是我国“八大名酒”之一，，唯以凤翔城西柳镇所生产的酒为最佳，声誉最高。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
+                <a href="./template/techan/shuijingbing.html">
                     <img src="./img/shuijingbing.jpg">
-                    <h2>水晶饼</h2>
-                    <p>水晶饼因其馅芯透明发亮，犹如水晶而得名。</p>
+                    <div>
+                        <h2>水晶饼</h2>
+                        <p>水晶饼因其馅芯透明发亮，犹如水晶而得名。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
+                <a href="./template/techan/shiliu.html">
                     <img src="./img/shiliu.jpg">
-                    <h2>临潼石榴</h2>
-                    <p>临潼石榴具有悠久的历史，引进初期，先在京都长安(今西安)御花园的“上林苑”和骊山的温泉宫(今华清池)内种植，是供皇子后妃观赏的。</p>
+                    <div>
+                        <h2>临潼石榴</h2>
+                        <p>临潼石榴具有悠久的历史，引进初期，先在京都长安(今西安)御花园的“上林苑”和骊山的温泉宫(今华清池)内种植，是供皇子后妃观赏的。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
-                    <img src="./img/lurou.jpg">
-                    <h2>凤翔腊驴肉</h2>
-                    <p>驴肉具有补气血，益脏腑等功能，对于积年劳损、久病初愈、气血亏虚、短气乏力、食欲不振者皆为补益食疗佳品。</p>
+                <a href="./template/techan/lalvrou.html">
+                    <img src="./img/lvrou.jpg">
+                    <div>
+                        <h2>凤翔腊驴肉</h2>
+                        <p>驴肉具有补气血，益脏腑等功能，对于积年劳损、久病初愈、气血亏虚、短气乏力、食欲不振者皆为补益食疗佳品。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
+                <a href="./template/techan/guamian.html">
                     <img src="./img/guamian.jpg">
-                    <h2>歧山挂面</h2>
-                    <p>选用优质小麦特粉，经过揉条，搓条，上棍等十道工序精制而成。</p>
+                    <div>
+                        <h2>歧山挂面</h2>
+                        <p>选用优质小麦特粉，经过揉条，搓条，上棍等十道工序精制而成。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
             <li>
-                <a href="#">
+                <a href="./template/techan/heimi.html">
                     <img src="./img/heimi.jpg">
-                    <h2>洋县黑米</h2>
-                    <p>洋县种植黑稻米，距今已有2000多年历史。</p>
+                    <div>
+                        <h2>洋县黑米</h2>
+                        <p>洋县种植黑稻米，距今已有2000多年历史。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
                 </a>
-                <a href="#" class="icon"></a>
             </li>
-
-
-
-
-
+            <li>
+                <a href="./template/techan/dongzao.html">
+                    <img src="./img/dongzao.jpg">
+                    <div>
+                        <h2>大荔冬枣</h2>
+                        <p>享有“南荔枝，北冬枣，百果王”的盛名。平均单果重17.5g，最大单果重可达25g</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
+            <li>
+                <a href="./template/techan/ganju.html">
+                    <img src="./img/ganju.jpg">
+                    <div>
+                        <h2>城固柑橘</h2>
+                        <p>城固柑橘历史悠久，2000年前就有“蜀汉江铃千树”的记载。但是，以前由于缺乏统一商标，降低了城固柑橘的市场竞争力。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
+            <li>
+                <a href="./template/techan/putao.html">
+                    <img src="./img/putao.jpg">
+                    <div>
+                        <h2>户太八号葡萄</h2>
+                        <p>西安那片森林农业合作社在户县政府的扶持下建立了3000余亩葡萄种植基地，现已取得初步成效。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
+            <li>
+                <a href="./template/techan/yingtao.html">
+                    <img src="./img/yingtao.jpg">
+                    <div>
+                        <h2>灞桥樱桃</h2>
+                        <p>灞桥樱桃颗粒饱满，果型硕大，果实呈肾形或宽心脏形，色泽艳丽有光泽，多数品种为鲜红色或紫红色</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
+            <li>
+                <a href="./template/techan/changwupingguo.html">
+                    <img src="./img/changwupingguo.jpg">
+                    <div>
+                        <h2>长武苹果</h2>
+                        <p>长武苹果作为陕西的名优水果，其营养丰富，价值较高，在当地人们称“糖果”。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
+            <li>
+                <a href="./template/techan/mihoutao.html">
+                    <img src="./img/mihoutao.jpg">
+                    <div>
+                        <h2>周至猕猴桃</h2>
+                        <p>周至猕猴桃是产于陕西周至的猕猴桃，周至猕猴桃的质地柔软，味道有时被描述为草莓、香蕉、凤梨三者的混合。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
+            <li>
+                <a href="./template/techan/yumian.html">
+                    <img src="./img/yumian.jpg">
+                    <div>
+                        <h2>彬县御面</h2>
+                        <p>彬县御面是陕西省咸阳市彬县著名的传统小吃。</p>
+                    </div>
+                    <img class="list-info" src="./img/next.png">
+                </a>
+            </li>
         </ul>
     </div>
 

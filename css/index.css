@@ -1,38 +1,79 @@
+*{margin:0;padding:0}
+body{background: #f9f9f9;}
+.header{position:fixed;width:100%;top:0;height:1.8rem;background-image: linear-gradient(#111,#333);z-index:9999;}
+.header-info{position:fixed;width:100%;height:0.8rem;top:0;background-image: linear-gradient(#111,#333);z-index:9999;}
+.header h1{width:100%;height:0.4rem;margin:0.2rem 0;color:#fff;font-size:0.3rem!important;text-align:center;}
+.header-info h1{margin-left:-0.6rem}
+.header-info a{float:left;width:1.0rem;height:0.6rem;margin-top:0.05rem;font-size:0.4rem;line-heigth:0.6rem;text-align:center;color:#fff;border:5px solid #333;border-radius:0.2rem;text-decoration:none;background: #000;}
 
-.header{position:fixed;width:100%;top:0;height:1.6rem;z-index:9999;}
-.header-info{position:fixed;width:100%;top:0;height:0.8rem;z-index:9999;}
-.header-info a span{font-size:0.3rem;}
-.ui-header>.ui-btn{margin-top:0.05rem;}
-.header h1{width:100%;height:0.4rem;font-size:0.3rem!important;text-align:center}
-.ui-header .ui-title, .ui-footer .ui-title {margin:0.2rem 0 0.2rem;}
 .header .navbar{height:1.0rem}
-.header .navbar ul li a{height:100%;}
-.header .navbar ul li a span{font-size:0.3rem;}
-.active{background:#5393c5}
+.header .navbar ul li {float:left;list-style:none;width:33.1%;height:1.0rem;background-image: linear-gradient(#555,#222);border:1px solid #111;}
+.header .navbar ul li a{display:block;width:100%;height:1.0rem;line-height:1.0rem;color:#fff;text-decoration:none;font-size:0.4rem;text-align:center;text-shadow: 0 1px 0 #111;}
+.header .navbar ul li a img{width:0.5rem;height:0.4rem;margin:0.2rem 0.2rem 0 0;}
+.active{background:#5393c5!important;}
 
 .content .listview {
     margin:0.8rem 0 1.0rem!important;
 }
-.content .listview li {
+.content .listview ul{
+    text-shadow: 0 1px 0 #fff;
+}
+.content .listview li:first-child {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+.content .listview li:last-child {
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+.content .listview li{
      height:1.6rem;
+    text-align: left;
+    border:1px solid #ccc;
+    background-image: linear-gradient(#fff,#f1f1f1);
  }
 .content .listview li a{
-    margin-left:1.0rem;
+    float:left;
+    width:100%;
 }
-.content .listview li img{
-    max-width:1.6rem;max-height:1.2rem;min-height:1.2rem;margin:0.2rem;border-radius:0.1rem;
+.content .listview li a img{
+    float:left;
+    width:1.6rem;height:1.2rem;margin:0.2rem;border-radius:0.1rem;
 }
-.content .listview li a h2{
-    margin:0 0 0.36rem;
+.content .listview li:first-child  a img{
+    border-top-left-radius: 0.3rem;
+}
+.content .listview li:last-child  a img{
+    border-bottom-left-radius: 0.3rem;
+}
+.content .listview li a .list-info{
+    float:right!important;
+    opacity:0.3;
+    width:0.8rem;height:1.2rem;margin-right:0;border-radius:0.1rem;
+}
+.content .listview li a div{
+    float:left;
+    width:7.4rem;
+    margin-right:0.6rem;
+}
+.content .listview li a div h2{
+    color:#333;
+    margin-top:0.2rem;
     font-size:0.4rem;
 }
-.content .listview li a p{
+.content .listview li a div p{
+   width:100%;
+    color:#555;
+    margin-top:0.3rem;
     font-size:0.24rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.content{ margin:1.0rem 0!important;}
-.content>img{width:100%;border-radius:0.2rem;}
-.content>p{padding:0.2rem; text-indent:0.6rem;font-size:0.4rem;line-height:0.6rem;}
+.content{ margin:1.0rem 0!important;border-width: 0;overflow: visible; overflow-x: hidden; padding: 15px;}
+.content > img{width:100%;border-radius:0.2rem;}
+.content > p{padding:0.2rem; text-indent:0.8rem;font-size:0.4rem;font-weight:normal;line-height:0.6rem;}
 
-.footer{position:fixed;width:100%;bottom:0;height:0.8rem;z-index:9999;}
-.footer .ui-title{width:100%;height:0.8rem;font-size:0.3rem;text-align:center}
+.footer{position:fixed;width:100%;height:0.8rem;bottom:0;background-image: linear-gradient(#111,#333);z-index:9999;}
+.footer h1{width:100%;height:0.8rem;line-height:0.8rem;font-size:0.3rem;color:#fff;text-align:center}
